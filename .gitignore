@@ -1,0 +1,10 @@
+.idea/
+node_modules/
+.DS_Store
+.terraform/
+logs/
+node_modules/
+pacts/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup

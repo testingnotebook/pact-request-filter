@@ -1,0 +1,29 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npx jest --testMatch \"**/*.spec.js\"",
+    "test:consumer": "npx jest --testMatch \"**/*consumer.pact.test.js\"",
+    "pact:publish": "node pact-publisher.js",
+    "test:provider": "npx jest --testMatch \"**/*product.pact.test.js\""
+  },
+  "jest": {
+    "testTimeout": 30000
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.17.3",
+    "@pact-foundation/pact-node": "^10.17.2",
+    "jest": "^27.5.1"
+  },
+  "license": "ISC",
+  "keywords": [],
+  "author": ""
+}
